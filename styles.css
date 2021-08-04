@@ -69,6 +69,7 @@ body, header, section {
   margin: 16px 0 8px;
   padding: 8px;
   text-decoration: none;
+  outline: 3px solid var(--verde);
 }
 
 .header {
@@ -121,9 +122,19 @@ nav {
   width: 33%;
 }
 
-.nav-item:hover, .nav-item:hover a {
+.nav-item:hover,
+.nav-item:hover a {
   background-color: var(--verde);
   cursor: pointer;
+  color: var(--gris-oscuro);
+}
+
+.nav-item:focus-within{
+  background-color: var(--verde);
+}
+
+.nav-item a:focus {
+  outline: none;
   color: var(--gris-oscuro);
 }
 
@@ -138,7 +149,6 @@ nav {
   display: flex;
   justify-content: space-around;
   margin: 32px auto 0;
-  width: 20%;
 }
 
 .social-media li a {
@@ -147,7 +157,15 @@ nav {
   color: var(--blanco);
   font-family: var(--secondary-font);
   text-decoration: none;
-  margin: 0 25px;
+}
+
+.social-media li a:focus {
+  outline: none;
+}
+
+.social-media li:focus-within {
+  outline: 3px solid var(--verde);
+  padding: 8px;
 }
 
 .social-link-text {
@@ -163,7 +181,8 @@ nav {
 
 .window {
   overflow: hidden;
-  width: 805px;
+  width: 815px;
+  padding: 8px;
 }
 
 .project-container {
@@ -179,6 +198,11 @@ nav {
 .project-container button {
   background: none;
   border: none;
+  padding: 0;
+}
+
+.project-container button:focus-within {
+  outline: 3px solid var(--verde);
 }
 
 .project {
@@ -240,8 +264,12 @@ nav {
 }
 
 input {
-  outline: none;
   width: 100%;
+}
+
+input:focus {
+  outline: 3px solid var(--verde);
+  padding: 8px;
 }
 
 .send-button {
