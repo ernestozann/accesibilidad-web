@@ -105,15 +105,15 @@
       <p class="intro">Puedes usar el formulario siguiente para enviarme un mensaje</p>
       <form class="form-container">
         <label class="form-label">Nombre</label><input id="name" type="text" aria-label="Nombre"/>
-        <span id="name-error"></span><br />
+        <span aria-live="assertive" id="name-error"></span><br />
         <label class="form-label">Correo</label><input id="email" type="email" aria-label="Correo"/> <br />
-        <span id="email-error"></span><br />
+        <span aria-live="assertive" id="email-error"></span><br />
         <label class="message-input">Mensaje<input id="message" type="text" aria-label="Mensaje"/> <br /></label>
-        <span id="message-error"></span><br />
+        <span aria-live="assertive" id="message-error"></span><br />
         <button class="send-button">Enviar</button>
       </form>
     </footer>
-    <div class="notification">El formulario fue enviado sin errores</div>
+    <div class="notification" aria-live="assertive">El formulario fue enviado sin errores</div>
     <div class="modal-container">
       <div class="modal">
         <h2 class="header" id="modal-header" tabindex="0">Ejemplo de un proyecto mio</h2>

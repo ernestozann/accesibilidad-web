@@ -90,6 +90,7 @@ function showNotification() {
   document.getElementById("email-error").innerHTML = "";
   document.getElementById("message-error").innerHTML = "";
   document.querySelector(".form-container").reset();
+  document.querySelector(".notification").innerHTML = "El formulario fue enviado sin errores";
   document.querySelector(".notification").style.display = "flex";
   setTimeout(function() {
     document.querySelector(".notification").style.display = "none";
